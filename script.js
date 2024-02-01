@@ -67,3 +67,18 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });       
+
+function bindData(articles) {
+  const cardsContainer = document.getElementById("cards-container");
+  const newsCardTemplate = document.getElementById("template-news-card");
+
+  cardsContainer.innerHTML = "";
+
+  if (articles && articles.length > 0) {
+    articles.forEach((article) => {
+      // ... rest of the code
+    });
+  } else {
+    // Handle the case when no articles are available
+  }
+}
